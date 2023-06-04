@@ -1,0 +1,468 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+
+  scroll-behavior: smooth;
+
+  
+}
+
+/*navbar*/
+  
+.navbar-brand {
+    font-size: 30px;
+    font-weight:900;
+    font-style: italic;
+    font-family: 'PT Serif', serif;
+}
+
+.navbar-brand:hover{
+  
+    text-shadow: 0 0 40px rgba(160, 160, 160, 0.818);
+    scale:1.1;
+    transition:1s;
+}
+
+
+  .nav-item{
+    font-size: 18px;
+    font-weight:600;
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+  }
+  .nav-item:hover{
+    
+    text-shadow: 0 0 40px rgba(160, 160, 160, 0.818);
+    scale:1.2;
+    transition:1s;
+  }
+
+#landing{
+  height: 100vh;
+  width:100vw;
+  background-size: cover;
+}
+  .position-relative {
+    position: relative;
+    height: 100vh;
+}
+
+.position-relative > * {
+    position: absolute;
+    background-color: #232323a2;
+   
+}
+
+.position-absolute{
+  margin-top: 100px!important;
+  width:45%;
+}
+
+@media (max-width: 578px) {
+  #landing{
+    height: 50vh;
+    width:100%;
+    background-size: contain;
+  }
+    .position-relative {
+      position: relative;
+      height: 50vh;
+  }
+  
+  .position-relative > * {
+      position: absolute;
+      background-color: #232323a2;
+     
+  }
+  
+  .position-absolute{
+    margin-top: 50px!important;
+    width:75%;
+  }
+  .position-absolute h1{
+    font-size:18px;
+    
+  }
+
+  .position-absolute p{
+    font-size:12px;
+    
+  }
+
+  .position-absolute .btn{
+    font-size:12px;
+    
+  }
+  
+  
+   
+}
+
+
+@media only screen and (min-width: 577px) and (max-width: 991px) {
+  #landing{
+    height: 50vh;
+    width:100%;
+    background-size: contain;
+  }
+    .position-relative {
+      position: relative;
+      height: 50vh;
+  }
+  
+  .position-relative > * {
+      position: absolute;
+      background-color: #232323a2;
+     
+  }
+  
+  .position-absolute{
+    margin-top: 150px!important;
+    width:50%;
+  }
+  .position-absolute h1{
+    font-size:32px;
+    
+  }
+
+  .position-absolute p{
+    font-size:18px;
+    
+  }
+
+  .position-absolute .btn{
+    font-size:16px;
+    
+  }
+  
+}
+
+
+
+
+
+
+
+
+.logo-item {
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10px;
+  color: #f7a502;
+}
+.logo-item i{
+  font-size: 24px;
+}
+
+
+@media (max-width: 578px){
+  .logo-item {
+    display: inline-block;
+    padding: 35px;
+    margin-right: 0px;
+    color: #f7a502;
+  }
+
+  .logo-item i{
+    font-size: 18px;
+  }
+  
+
+}
+
+
+.row-card {
+  display: flex;
+  height: 90vh;
+}
+
+.row-card .card {
+  width: 30%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  margin-left: 2.5%;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  
+  
+}
+
+
+
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.card button {
+  padding: 10px 20px;
+  
+  
+  color: #f8d702;
+  cursor: pointer;
+}
+
+.card:nth-child(1) {
+  background-image: url('img/first/1.png');
+  
+  
+}
+
+.card:nth-child(2) {
+  background-image: url('img/second/1.png');
+}
+
+.card:nth-child(3) {
+  background-image: url('img/third/5.png');
+}
+@media (max-width: 578px){
+  .row-card {
+    display: grid;
+    height: 280vh;
+  }
+  
+  .row-card .card {
+    width: 90%;
+    height:80vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    margin: 20px auto;
+    
+  }
+  
+  
+}
+@media only screen and (min-width: 577px) and (max-width: 991px) {
+  .row-card {
+    display: grid;
+    height: 280vh;
+  }
+  
+  .row-card .card {
+    width: 90%;
+    height:80vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    margin: 20px auto;
+    
+  }
+
+
+  .card h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card button {
+    padding: 10px 20px;
+    margin-bottom: 50px;
+    
+    color: #f8d702;
+    cursor: pointer;
+  }
+}
+
+
+.row-product {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.small-card {
+  
+  width:18%;
+  margin-left:15px;
+}
+
+.small-card img{
+  border-radius: 10px;
+}
+
+
+.row-product .card h5 {
+  font-size: 16px;
+}
+
+.row-product .card p {
+  font-size: 14px;
+  width:80%;
+}
+
+@media (max-width: 578px) {
+  .row-product {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .small-card {
+    width: 80%;
+     /* Remove the left margin to align cards properly */
+    margin-bottom: 25px; /* Add a bottom margin to create space between rows */
+    
+   
+  }
+  
+  .small-card img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .row-product .card h5 {
+    font-size: 16px;
+  }
+  
+  .row-product .card p {
+    font-size: 14px;
+  
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 991px) {
+  .small-card {
+    width: 16%;
+    
+    margin-bottom: 25px; 
+    
+   
+  }
+  
+  .small-card img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+
+#blog .Shipping,
+  #blog .Quality,
+  #blog .Offers,
+  #blog .Payments {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0px 20px;
+  }
+
+
+  #blog .Shipping i,
+  #blog .Quality i,
+  #blog .Offers i,
+  #blog .Payments i {
+    font-size: 48px; /* Adjust the size as needed */
+  }
+
+  @media (max-width: 578px){
+    #blog .Shipping,
+  #blog .Quality,
+  #blog .Offers,
+  #blog .Payments {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0px 50px;
+  }
+
+
+  #blog .Shipping i,
+  #blog .Quality i,
+  #blog .Offers i,
+  #blog .Payments i {
+    font-size: 48px; /* Adjust the size as needed */
+  }
+  }
+    
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+    
+  footer {
+    background: linear-gradient(43deg, rgba(255, 240, 6, 1) 0%, rgba(255, 158, 31, 1) 35%, rgb(202, 192, 3) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  footer a {
+    text-decoration: none;
+  }
+  footer a:hover {
+    color: #a9a9a9 !important;
+    text-shadow: 0 0 40px rgba(23, 23, 23, 0.818);
+  }
+  
+  
+  @media (max-width: 576px) {
+    
+  }
+
+
+  @media only screen and (min-width: 577px) and (max-width: 991px) {
+    
+  }
+
+#about{
+  color : rgb(255, 187, 0);
+}
+
+
+  
+#price{
+  color : rgb(255, 140, 0);
+  
+}
+  @media (max-width: 576px) {
+    
+  }
+
+
+  .whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 50px;
+    color: rgb(4, 249, 4);
+    cursor: pointer;
+  }
+  .whatsapp-icon:hover{
+    text-shadow: 0 0 40px rgba(160, 160, 160, 0.818);
+    scale:1.1;
+    transition:1s;
+  }
