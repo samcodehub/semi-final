@@ -10,6 +10,45 @@ html, body {
   
 }
 
+.cart-panel {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  transition: right 0.3s ease;
+}
+
+.cart-panel.open {
+  right: 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 32px;
+  border: none;
+  background: none;
+  color: #999;
+  cursor: pointer;
+}
+
+
+.cart-footer {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.card-footer a{
+  font-size: 48px;
+}
+
 /*navbar*/
   
 .navbar-brand {
@@ -97,8 +136,7 @@ html, body {
     
   }
   
-  
-   
+
 }
 
 
@@ -149,19 +187,19 @@ html, body {
 
 .logo-item {
   display: inline-block;
-  padding: 10px;
+  padding: 50px;
   margin-right: 10px;
   color: #f7a502;
 }
 .logo-item i{
-  font-size: 24px;
+  font-size: 40px;
 }
 
 
 @media (max-width: 578px){
   .logo-item {
     display: inline-block;
-    padding: 35px;
+    padding: 15px;
     margin-right: 0px;
     color: #f7a502;
   }
@@ -358,6 +396,10 @@ html, body {
   .small-card img {
     width: 100%;
     height: 100%;
+  }
+
+  .small-card .text-muted{
+    font-size:15px;
   }
 }
 

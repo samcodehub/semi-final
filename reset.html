@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Password Reset</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="" crossorigin="anonymous">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+  <main>
+    <section class="container reset-container">
+      <fieldset>
+        <div>
+          <img src="img/logo.png">
+          
+        </div>
+        <div>
+          <label for="mail" ></label> <br>
+          <input type="email" id="mail" name="mail" placeholder="Enter Your Email"/>
+        </div>
+        <button id="resetPassword">Send to email</button>
+      </fieldset>
+    </section>
+    <div class="feedbackContainer success">
+      <button class="close-btn" id="success-close-btn">&times;</button>
+      <div class="feedbackIcon"><i class="fa-duotone fa-hexagon-exclamation"></i></div>
+      <p class="feedbackMessage ">Signed up Successfully. Please check your mail inbox.</p>
+    </div>
+    <div class="feedbackContainer failure">
+      <button class="close-btn" id="failure-close-btn">&times;</button>
+      <div class="feedbackIcon"></div>
+      <p class="feedbackMessage">Signing up failed. Please check your email address!</p>
+    </div>
+  </main> 
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+  <!-- Our script must be loaded after Firebase and MDB references -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"></script>
+  <script src="reset.js"></script>
+</body>
+
+</html>
